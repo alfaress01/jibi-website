@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibi Expense Tracker - تطبيق إدارة المصروفات</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .download-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+        
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Jibi Expense Tracker</h1>
+            <p>تطبيق إدارة المصروفات الذكي</p>
+        </div>
+        
+        <div class="content">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px;">مرحباً بك في تطبيق Jibi</h2>
+            
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 30px;">
+                تطبيق مجاني وسهل الاستخدام لإدارة مصروفاتك الشخصية بذكاء وفعالية
+            </p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>📊 إحصائيات مفصلة</h3>
+                    <p>تقارير وإحصائيات شاملة لمساعدتك في فهم أنماط الإنفاق</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🌍 دعم متعدد اللغات</h3>
+                    <p>يدعم العربية والإنجليزية والإسبانية</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>💾 نسخ احتياطي آمن</h3>
+                    <p>احفظ بياناتك واستعدها بسهولة وأمان</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🎨 واجهة عصرية</h3>
+                    <p>تصميم جميل وسهل الاستخدام</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🔒 خصوصية تامة</h3>
+                    <p>جميع بياناتك محفوظة محلياً على جهازك</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>📱 مجاني بالكامل</h3>
+                    <p>تطبيق مجاني مع إعلانات غير مزعجة</p>
+                </div>
+            </div>
+            
+            <div class="download-section">
+                <h3 style="margin-bottom: 20px;">حمل التطبيق الآن</h3>
+                <a href="#" class="download-btn">📱 Google Play Store</a>
+                <a href="#" class="download-btn">🍎 App Store</a>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid #e9ecef;">
+                <h3 style="color: #667eea; margin-bottom: 15px;">معلومات التطبيق</h3>
+                <p><strong>الإصدار:</strong> 1.0.3+7</p>
+                <p><strong>المطور:</strong> Jibi Team</p>
+                <p><strong>معرف التطبيق:</strong> com.example.jibiFlutterApp</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>
+                <a href="privacy.html">سياسة الخصوصية</a> | 
+                <a href="mailto:support@jibi.app">الدعم الفني</a>
+            </p>
+            <p style="margin-top: 10px;">© 2025 Jibi Expense Tracker. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+</body>
+</html>
